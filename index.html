@@ -4,79 +4,113 @@
     <meta charset="UTF-8">
     <title>Messi Tribute | Eslam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Main JavaScript logic -->
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<button id="scrollToTopBtn" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- Scroll to top button -->
+<button id="scrollToTopBtn" class="scroll-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
+<!-- Toast notification -->
 <div id="toast" class="toast">
-    <i class="fa-solid fa-circle-check"></i> <span id="toast-msg">Message sent successfully!</span>
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-msg">Message sent successfully!</span>
 </div>
 
+<!-- Hero section -->
 <header class="hero">
     <div class="overlay"></div>
+
+    <!-- Navigation menu anchor -->
     <a href="#gallery" class="menu">MENU</a>
+
+    <!-- Logo -->
     <h2 class="logo"><span>Messi</span> Tribute</h2>
 
     <div class="home1">
         <div class="hero-content fade-in">
+
+            <!-- Hero intro text -->
             <h1>Hi, My Name Is Eslam</h1>
             <hr>
+
             <p>
                 This space is a tribute to the greatest footballer of all time.  
                 Moments that made history — Lionel Messi.
             </p>
+
             <a href="#gallery" class="btn">GET STARTED</a>
         </div>
     </div>
 </header>
 
 <main>
+
+    <!-- Gallery section -->
     <section class="gallery-section" id="gallery">
         <div class="section-title fade-in">
             <h2>Legendary Moments</h2>
             <hr>
         </div>
+
+        <!-- Dynamic gallery injected by JavaScript -->
         <div class="gallery" id="gallery-container">
-            </div>
+        </div>
     </section>
 
+    <!-- Contact section -->
     <section class="contact-section" id="contact">
         <div class="contact-container fade-in">
+
+            <!-- Contact form -->
             <form class="contact-form" id="contactForm" novalidate>
+
                 <div class="section-title-small">
                     <h2>Get in Touch</h2>
                 </div>
-                
+
                 <div class="row">
                     <div class="input-group">
                         <label for="name">NAME</label>
                         <input type="text" id="name" placeholder="Enter your name">
                         <span class="error-text" id="nameError">Name is required</span>
                     </div>
+
                     <div class="input-group">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" placeholder="Enter your email">
                         <span class="error-text" id="emailError">Please enter a valid email</span>
                     </div>
                 </div>
-                
+
                 <div class="input-group">
                     <label for="message">MESSAGE</label>
                     <textarea id="message" rows="6" placeholder="Your message..."></textarea>
                     <span class="error-text" id="messageError">Message cannot be empty</span>
                 </div>
 
+                <!-- Form actions -->
                 <div class="form-actions">
                     <button type="submit" class="btn-submit">SEND MESSAGE</button>
                     <button type="button" class="btn-clear" id="clearFormBtn">CLEAR</button>
                 </div>
+
             </form>
 
+            <!-- Contact information -->
             <div class="contact-info">
+
                 <div class="info-item">
                     <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="details">
@@ -100,22 +134,29 @@
                         <p>Qena - Deshna</p>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
+
 </main>
 
+<!-- Footer -->
 <footer class="footer">
     <div class="footer-content">
         <p>© 2026 | Messi Tribute by Eslam</p>
-        
+
+        <!-- Social links -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/eslam-yasser-a57435353/" target="_blank" title="LinkedIn">
                 <img src="./img/linkedin.png" alt="LinkedIn">
             </a>
+
             <a href="https://github.com/programmer-eslamyasser" target="_blank" title="GitHub">
                 <img src="./img/github-sign.png" alt="GitHub">
             </a>
+
             <a href="https://www.instagram.com/eslamyasserfawzi/" target="_blank" title="Instagram">
                 <img src="./img/instagram.png" alt="Instagram">
             </a>
